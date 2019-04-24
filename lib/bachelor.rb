@@ -5,12 +5,14 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
     contestant.each do |infoKey , infoVal|
       if infoKey == "status" && infoVal == "Winner"
-        puts "winner found"
-        a = data[season][contestant][infoKey].to_s
+        #puts "winner found"
+        #a = data[season][contestant][infoKey].to_s
+        a = data[season][contestant][infoKey]
       end
     end
   end
     
+  puts a
   return a
 end
 
