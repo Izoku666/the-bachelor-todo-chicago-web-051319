@@ -1,7 +1,9 @@
 def get_first_name_of_season_winner(data, season)
   # code here
+  a = ""
   
-  return 
+  data[season].each do ||
+  return a
 end
 
 def get_contestant_name(data, occupation)
